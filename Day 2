@@ -1,0 +1,117 @@
+Q1)
+public class Main {
+        public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+            int diameter=s.nextInt();
+            System.out.println(3.14*diameter);
+                }
+    }
+
+
+
+Q2)
+    public class Main {
+        public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+            double length=sc.nextDouble();
+            double breadth=sc.nextDouble();
+            System.out.println(length*breadth);
+                }
+    }
+
+
+
+Q3)
+    public class Main {
+        public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+            int x=sc.nextInt();
+            boolean ans=x>1000;
+            System.out.println(ans);
+                }
+    }
+
+
+
+Q4) 
+Quiz
+
+
+
+Q5)
+Find the answers for the following expression
+
+	a. Int x = 7+3+4                = 14
+	b. Int x = 12 + 5 + 8           = 25
+	c. Int x= 13/5 + 18/8           = 4
+	d. double x= 12 + 5.0 + 2.76    = Error(lossy Conversion)
+	e. double x= 12/3 + 13/2        = 10.0
+	f. double x=12/3 + 13.0/2       = 10.5
+	g. double x=14/2 + 15.0/4       = 10.75
+	h. double x= 13/2 % 5/3         = 0
+	i. double x= 17.0/2 % 16.0/4    = 2.125
+
+
+
+
+Q6)
+Store these expressions inside a Boolean variable ans. Print their outputs true or false accordingly
+a. boolean ans = 3 > 2		= true
+b. boolean ans = 3 ≥ 3		= true
+c. boolean ans = 4 + 3 > 9	= false
+d. boolean ans = 10 + 8 > 10	= true
+e. boolean ans = 12 != 10	= true
+f. boolean ans = 13 == 13	= true
+g. boolean ans = 14 != 14	= false
+h. boolean ans = 20 == 5*4	= true
+i. boolean ans = 30 != 3+4-10	= true
+j. boolean ans = 20 == 41/2	= true
+
+
+
+Q7)
+    public class Main {
+        public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+            double S1=s.nextDouble();
+            double S2=s.nextDouble();
+            double S3=s.nextDouble();
+            double S4=s.nextDouble();
+            double S5=s.nextDouble();
+            double total_marks=S1+S2+S3+S4+S5;
+            System.out.println("Total Marks= "+total_marks);
+            System.out.println("Percentage= "+(total_marks*100)/500);
+                }
+    }
+
+
+
+Q8)
+    public class Main {
+        public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int b=s.nextInt();    
+        int c=s.nextInt();    
+        int d=s.nextInt();    
+            boolean ans= a*b*c*d>1000;
+            System.out.println(ans);
+        }
+    }
+
+
+
+Q9)
+    public class Main {
+        public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+            boolean ans= a%7==0 ;
+            System.out.println(ans);
+        }
+    }
+
+
+
+Q10)
+Quiz
