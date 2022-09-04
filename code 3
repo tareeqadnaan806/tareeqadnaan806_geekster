@@ -1,0 +1,157 @@
+mysql-ctl cli;
+
+show DATABASES;
+
+CREATE DATABASE hello_db;
+
+CREATE DATABASE helloWorld;
+
+DROP DATABASE helloWorld;
+
+USE hello_db; 
+
+SELECT DATABASE();
+
+
+CREATE DATABASE cat_app;
+
+USE cat_app;
+CREATE TABLE cats
+(
+    name varchar(100),
+    breed varchar(100),
+    age int
+);
+
+show tables;
+
+desc cats;
+
+drop table cats;
+
+INSERT into cats(name , breed , age)
+VALUES('Jetson' , 'Cub' , 7);
+
+SELECT * from cats;
+
+SELECT name , age from cats;
+
+INSERT into cats(name , breed , age)
+VALUES(7 , 'Cub' , 'Jetson');
+
+
+INSERT into cats(age , breed , name)
+VALUES(7 , 'Cub' , 'skippy'),
+    (9 , 'Tabby' , 'charlie'),
+    (10 , 'rottwheellar' , 'Jinny');
+    
+# Insertion Challenge 
+CREATE TABLE people
+(
+    first_name varchar(20),
+    last_name varchar(20),
+    age int
+);
+
+INSERT into people(first_name , last_name , age)
+VALUES('Tina' , 'Belcher' , 13);
+
+    
+INSERT into people(first_name , last_name , age)
+VALUES('Bob' , 'Belcher' , 42);
+
+
+INSERT into people(first_name , last_name , age)
+VALUES('Linda' , 'Belcher' , 45),
+    ('Phillip', 'Frond' , 38),
+    ('Calvin' , 'Fishcoeder', 70);
+    
+#Null 
+INSERT into cats(name)
+VALUES('Alabama');
+
+INSERT into cats()
+VALUES();
+
+SELECT * from cats;
+
+#NOT NULL 
+CREATE TABLE cats2
+(
+    name varchar(100) NOT NULL ,
+    age int NOT NULL
+);
+
+INSERT into cats2(age)
+VALUES(7);
+
+# DEFAULT 
+
+CREATE TABLE cats3
+(
+    name varchar(100) NOT NULL DEFAULT 'no name provided' ,
+    age int NOT NULL DEFAULT 99
+);
+
+INSERT into cats3(name)
+VALUES('Jetson');
+
+INSERT into cats3(age)
+VALUES(8);
+
+
+
+#PRIMARY KEY 
+
+CREATE TABLE unique_cats
+(
+    cat_id int not null ,
+    name varchar(100) ,
+    age int ,
+    PRIMARY KEY(cat_id)
+);
+
+CREATE TABLE unique_cats
+(
+    cat_id int not null PRIMARY KEY ,
+    name varchar(100) NOT NULL DEFAULT 'no name provided' ,
+    age int NOT NULL DEFAULT 99
+);
+
+INSERT into unique_cats(cat_id , name , age)
+VALUES(1 , 'Fred' , 23)	;
+
+INSERT into unique_cats(cat_id , name , age)
+VALUES(2 , 'Louise' , 3);
+
+INSERT into unique_cats(cat_id , name , age)
+VALUES(2 , 'Kitty' , 4);
+
+# AUTO_INCREMENT
+CREATE TABLE unique_cats2
+(
+    cat_id int not null PRIMARY KEY AUTO_INCREMENT ,
+    name varchar(100) NOT NULL DEFAULT 'no name provided' ,
+    age int NOT NULL DEFAULT 99
+);
+
+INSERT into unique_cats2(name , age)
+VALUES('Kitty' , 4);
+
+INSERT into unique_cats2(name , age)
+VALUES('Kity' , 5);
+
+# Auto_increment with some specific value
+CREATE TABLE unique_cats3
+(
+    cat_id int not null PRIMARY KEY AUTO_INCREMENT ,
+    name varchar(100) NOT NULL DEFAULT 'no name provided' ,
+    age int NOT NULL DEFAULT 99
+);
+
+
+INSERT into unique_cats3(cat_id , name , age)
+VALUES(9982998 , 'Kitty' , 4);
+
+INSERT into unique_cats3(name , age)
+VALUES('Kitttty' , 41);
