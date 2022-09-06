@@ -41,6 +41,14 @@ Quiz
 Q5)
 Find the answers for the following expression
 
+	public class main{
+	public static void main(String[] args){
+	Scanner s=new Scanner(System.in);
+	int x=s.nextInt();
+	double x=s.nextDouble();
+	System.out.println(x);
+	    }
+	}
 	a. Int x = 7+3+4                = 14
 	b. Int x = 12 + 5 + 8           = 25
 	c. Int x= 13/5 + 18/8           = 4
@@ -56,16 +64,23 @@ Find the answers for the following expression
 
 Q6)
 Store these expressions inside a Boolean variable ans. Print their outputs true or false accordingly
-a. boolean ans = 3 > 2		= true
-b. boolean ans = 3 ≥ 3		= true
-c. boolean ans = 4 + 3 > 9	= false
-d. boolean ans = 10 + 8 > 10	= true
-e. boolean ans = 12 != 10	= true
-f. boolean ans = 13 == 13	= true
-g. boolean ans = 14 != 14	= false
-h. boolean ans = 20 == 5*4	= true
-i. boolean ans = 30 != 3+4-10	= true
-j. boolean ans = 20 == 41/2	= true
+
+	public class main{
+	public static void main(String[] args){
+	boolean ans=3>2;
+	System.out.println(ans);
+	    }
+	}
+	a. boolean ans = 3 > 2		= true
+	b. boolean ans = 3 ≥ 3		= true
+	c. boolean ans = 4 + 3 > 9	= false
+	d. boolean ans = 10 + 8 > 10	= true
+	e. boolean ans = 12 != 10	= true
+	f. boolean ans = 13 == 13	= true
+	g. boolean ans = 14 != 14	= false
+	h. boolean ans = 20 == 5*4	= true
+	i. boolean ans = 30 != 3+4-10	= true
+	j. boolean ans = 20 == 41/2	= true
 
 
 
