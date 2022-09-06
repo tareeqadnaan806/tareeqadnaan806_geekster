@@ -1,0 +1,93 @@
+Q1) Greater
+public class Main {
+public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int b=s.nextInt();
+        if(a>b)
+            System.out.println(a);
+        else
+            System.out.println(b);
+    }
+}
+
+
+
+Q2) Even or Odd
+public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+        int x=s.nextInt();
+        if(x%2==0)
+            System.out.println("Even");
+        else
+            System.out.println("Odd");
+    }
+}
+
+
+
+Q3) Tax or not tax
+public class Main {
+  public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+        int x=s.nextInt();
+        if(x<500000)
+            System.out.println("No tax to be paid");
+        else
+            System.out.println("Tax to be paid");
+    }
+}
+
+
+
+Q4) Grace Marks
+public class Main {
+  public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+        int m=s.nextInt();
+        if(m<33)
+            System.out.println(m+4);
+        else
+            System.out.println(m);
+    }
+}
+
+
+
+
+Q5) Age Bracket
+public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        if(a>=70)
+            System.out.println("Super Senior Citizen");
+        else if(a>=59)
+            System.out.println("Senior Citizen");
+        else if(a>=18)
+            System.out.println("Adult");
+        else if(a>1)
+            System.out.println("Underage");
+        else
+            System.out.println("New Born");
+    }
+}
+
+
+
+
+
+Q6) Final Salary
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int s=sc.nextInt();
+        if(a>60)
+            System.out.println(s+1000);
+        else if(a>40)
+            System.out.println(s+500);
+        else
+            System.out.println(s);
+    }
+}
+
+
